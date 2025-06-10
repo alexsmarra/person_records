@@ -8,13 +8,7 @@ This C program stores and displays personal information in a structured table fo
 ## Example Output
 
 After entering data for 4 people, the program displays the information in this formatted table:
-
-First Name      | Last Name       | Profession          
--------------------------------------------------------------
-Alex            | Simon           | Software Engineer 
-Paula           | Smith           | Banking         
-Monique         | Edward          | Astronomer      
-Tatiana         | Sagan           | Teacher      
+<img width="744" alt="a" src="https://github.com/user-attachments/assets/2e9383c5-4afa-407a-b195-21021962842d" />
 
 
 ## Features
