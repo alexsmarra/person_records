@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
+#define ROWS 4
+#define COLS 3
+#define FIELD_SIZE 25
+
 int main() {
    // Define a 2D array: 4 rows (people), 3 columns (fields), max 24 chars per field (+1 for '\0')
-   char records[4][3][25];
-   const char *headers[3] = {"First Name", "Last Name", "Profession"};
+   char records[ROWS][COLS][FIELD_SIZE];
+   const char *headers[COLS] = {"First Name", "Last Name", "Profession"};
    int i, j;
 
    // Input: read data from the user
@@ -24,7 +28,12 @@ int main() {
    }
 
    // Output: print the data as a table.
-   printf("\n\n%-15.15s | %-15.15s | %-20.20s\n", "First Name", "Last Name", "Profession");
+   printf("\n\n");
+   for(j = 0; j < COLS; j++) {
+      printf("%-15.15s", headers[j]);
+      if(j < COLS -1) printf(" | ");
+   }
+   printf("\n");
    printf("-------------------------------------------------------------\n");
    
    for(i = 0; i < 4; i++) {
