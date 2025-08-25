@@ -1,6 +1,7 @@
 # Person Records Table Program
 
-This C program stores and displays personal information in a structured table format. It collects data for 4 people, with each entry consisting of:
+This C program stores and displays personal information in a structured table format.  
+It collects data for a fixed number of people (`ROWS = 4`), with each entry consisting of:
 - First Name
 - Last Name
 - Profession
@@ -12,9 +13,10 @@ After entering data for 4 people, the program displays the information in this f
 
 
 ## Features
-- Input validation (trims newline characters)
-- Clean tabular output with consistent column widths
-- Handles up to 24 characters per field (displays max 15-20 chars)
+- Uses constants (`#define`) for easy adjustment of number of people, fields, and field size  
+- Input validation (trims newline characters)  
+- Clean tabular output with consistent column widths  
+- Handles up to 24 characters per field (display shows up to 15 chars per column)  
 
 ## Usage
 1. Compile: `gcc -o main person_records.c` 
@@ -24,4 +26,4 @@ After entering data for 4 people, the program displays the information in this f
 
 ## Notes
 - If input exceeds display width, it will be truncated in output (but fully stored in memory)
-- Profession column allows slightly wider display (20 chars)
+- Table size and field size can be easily modified in the `#define` section
